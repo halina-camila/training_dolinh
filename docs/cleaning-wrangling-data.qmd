@@ -1,0 +1,17 @@
+---
+title: "Cleaning and Wrangling Data"
+author: "Halina Do-Linh"
+format: html
+---
+
+## Set up
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(readr)
+```
+
+
+
+
