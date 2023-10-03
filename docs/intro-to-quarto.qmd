@@ -1,0 +1,19 @@
+---
+title: "Intro to Quarto"
+format: html
+bibliography: "../references.bib"
+---
+
+# Header 1
+
+I'm going to **bold** this text.
+
+Now I'm going to *italicize* this text.
+
+## Header 2
+
+Here is some cited text [@oke2020].
+
+### Header 3
+
+#### Header 4

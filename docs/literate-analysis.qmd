@@ -1,0 +1,39 @@
+---
+title: "Mini Literate Analysis"
+author: "Halina Do-Linh"
+format: html
+---
+
+## Introduction
+
+::: {.callout-note}
+This literate analysis is for educational purposes only and should not be used for official analysis.
+:::
+
+### About this data
+
+Data was retrieved from the Arctic Data Center data portal: [North Pole Environmental Observatory Bottle Chemistry](https://arcticdata.io/catalog/view/doi:10.18739/A25T3FZ8X) submitted by Craig Tweedie.
+
+### Set up
+
+```{r}
+library(readr) # allows me to use read_csv()
+library(here)
+```
+
+
+### Read data
+
+```{r}
+bg_chem <- read_csv(here("data", "BGchem2008data.csv"))
+```
+
+## Analysis
+
+### Calculate Summary Stats
+
+### Calculate Mean Redfield Ratio
+
+### Plot Ratio
+
+## Conclusion
