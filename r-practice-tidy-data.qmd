@@ -1,0 +1,37 @@
+---
+title: "r practice: tidy data"
+format: html
+---
+
+```{r}
+library(dplyr)
+library(readr)
+library(lubridate)
+```
+
+```{r}
+# read in data using download links
+bird_observations <- read_csv("https://portal.edirepository.org/nis/dataviewer?packageid=knb-lter-cap.256.10&entityid=53edaa7a0e083013d9bf20322db1780e")
+
+sites <- read_csv("https://portal.edirepository.org/nis/dataviewer?packageid=knb-lter-cap.256.10&entityid=81bf72420e69077097fb0790dcdc63a6")
+
+```
+
+```{r}
+birds_subset <- bird_observations %>% 
+  filter(species_id %in% c("BHCO", "RWBL")) %>% 
+  filter(site_id %in% c("LI-W", "NU-C"))
+```
+
+```{r}
+birds_left <- birds_subset %>% 
+  left_join(y = sites, by = "site_id")
+```
+
+```{r}
+birds_left <- left_join(x = birds_subset, y = sites, by = "site_id")
+```
+
+
+
+
